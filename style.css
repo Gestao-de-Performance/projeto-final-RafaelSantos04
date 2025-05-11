@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-link: #4169e1;
+    --cor-texto: #ffffff;
+    --cor-texto-destaque: #00bfff;
+    --cor-texto-azul: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./img/imagem.tech.jpg');
+}
+
+header {
+    padding: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+a:hover{
+    color:#00bfff;
+}
+
+.marginSite{
+    margin: 0 6%;
+}
+
+.alinharDivs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gapDiv{
+    gap: 20%;
+}
+
+.marginSuperior{
+    margin-top: 3%;
+}
+
+.corTextoAzul{
+    color: var(--cor-texto-azul);
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin: 6% 0 3%;
+}
+
+span{
+    color: var(--cor-texto);
+}
+
+@media screen and (max-width: 1024px) {
+    .alinharDivs{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marginSite{
+        margin: 0 5%;
+    }
+}
+
+h1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+h2{
+    max-width: 940px;
+    font-size: 1.40rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+.textosubTitulo{
+    max-width: 240px;
+    color: var(--cor-texto);
+    position: relative;
+    bottom: -85px;
+}
+
+.containerHabilidades{
+    display: flex;
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -20px;
+}
+
+.containerInfoSkills{
+    padding: 4% 2%;
+}
+
+.subtituloHabilidades{
+    font-size: 1.50rem;
+}
+
+.containerHabilidades{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+.alinharBotoes{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.tituloSoftSkills{
+    font-size: 1rem;
+    font-weight: 300;
+    gap: 5%;
+}
+
+.cotnainerAprendendo{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .posicaoPersonagem{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subtituloHabilidades{
+        font-size: 1.2rem;
+    }
+
+    .containerHabilidades{
+        flex-wrap: wrap;
+        min-width: 0;
+        gap: 15px;
+    }
+}
+
+.botaoProjetos{
+    transition: 0.3s;
+}
+
+.botaoProjetos:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+footer{
+    padding: 3% 0;
+}
+
+.containerRodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.containerContatos{
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        padding: 5% 0;
+    }
+
+    .containerRodape{
+        flex-wrap: wrap;
+    }
+}
